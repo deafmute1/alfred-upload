@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>immichkey</key>
+	<string>yL100vIfVkbpJYucW0x3dwJXHmGyPXkLhWgAzJwJZE</string>
+	<key>immichurl</key>
+	<string>https://immich.def.au</string>
+	<key>ncdest</key>
+	<string>/Users/vi/Nextcloud/share</string>
+</dict>
+</plist>
