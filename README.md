@@ -1,6 +1,9 @@
 Uploads files to various services via universal action. 
 Displays results/status via notifications, filter keyword and even past results via a log file.
 
+[**Download latest release**](https://github.com/deafmute1/alfred-upload/releases/latest/download/Upload.Files.alfredworkflow)
+
+
 ### Currently supported upload backends
 
 **Nextcloud Share**:
