@@ -4,8 +4,6 @@
 <dict>
 	<key>bundleid</key>
 	<string>au.def.upload</string>
-	<key>category</key>
-	<string>Tools</string>
 	<key>connections</key>
 	<dict>
 		<key>0D512524-37A5-4908-A842-73A88AF7C919</key>
@@ -284,7 +282,7 @@
 						<key>matchmode</key>
 						<integer>0</integer>
 						<key>matchstring</key>
-						<string>None</string>
+						<string></string>
 						<key>outputlabel</key>
 						<string>no dest</string>
 						<key>uid</key>
@@ -376,7 +374,7 @@
 						<key>matchmode</key>
 						<integer>0</integer>
 						<key>matchstring</key>
-						<string>None</string>
+						<string></string>
 						<key>outputlabel</key>
 						<string>No url</string>
 						<key>uid</key>
@@ -390,7 +388,7 @@
 						<key>matchmode</key>
 						<integer>0</integer>
 						<key>matchstring</key>
-						<string>None</string>
+						<string></string>
 						<key>outputlabel</key>
 						<string>No key</string>
 						<key>uid</key>
@@ -545,9 +543,9 @@ Cloud icon (icon.png) created by graphicmall - Flaticon (https://www.flaticon.co
 		<key>B067A6DC-E67C-4FBB-AC5E-A1774A154167</key>
 		<dict>
 			<key>xpos</key>
-			<real>50</real>
+			<real>55</real>
 			<key>ypos</key>
-			<real>210</real>
+			<real>230</real>
 		</dict>
 		<key>E986CBE7-F9DA-4C82-8917-5CDD32FC9C37</key>
 		<dict>
@@ -570,20 +568,20 @@ Cloud icon (icon.png) created by graphicmall - Flaticon (https://www.flaticon.co
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string>None</string>
-				<key>placeholder</key>
 				<string></string>
+				<key>filtermode</key>
+				<integer>1</integer>
+				<key>placeholder</key>
+				<string>~/Nextcloud/share</string>
 				<key>required</key>
 				<false/>
-				<key>trim</key>
-				<true/>
 			</dict>
 			<key>description</key>
-			<string>Required for Nextcloud. A folder that is within nextcloud desktop sync target. Files will be copied here for sharing. Do not use shell expansion or variables (full paths only).</string>
+			<string>Required for Nextcloud. A folder that is within nextcloud desktop sync target. Files will be copied here for sharing.</string>
 			<key>label</key>
 			<string>Nextcloud Desination Folder</string>
 			<key>type</key>
-			<string>textfield</string>
+			<string>filepicker</string>
 			<key>variable</key>
 			<string>ncdest</string>
 		</dict>
@@ -591,7 +589,7 @@ Cloud icon (icon.png) created by graphicmall - Flaticon (https://www.flaticon.co
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string>None</string>
+				<string></string>
 				<key>placeholder</key>
 				<string></string>
 				<key>required</key>
@@ -612,9 +610,9 @@ Cloud icon (icon.png) created by graphicmall - Flaticon (https://www.flaticon.co
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string>None</string>
-				<key>placeholder</key>
 				<string></string>
+				<key>placeholder</key>
+				<string>https://immich.example.com</string>
 				<key>required</key>
 				<false/>
 				<key>trim</key>
@@ -630,8 +628,6 @@ Cloud icon (icon.png) created by graphicmall - Flaticon (https://www.flaticon.co
 			<string>immichurl</string>
 		</dict>
 	</array>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
 	<string>1.0</string>
 	<key>webaddress</key>
