@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>immichkey</key>
-	<string>yL100vIfVkbpJYucW0x3dwJXHmGyPXkLhWgAzJwJZE</string>
+	<string>6ojb2kIxbg0V18HhqbxrmCeZZA8xuKk67tIlSy00</string>
 	<key>immichurl</key>
 	<string>https://immich.def.au</string>
 	<key>ncdest</key>
-	<string>/Users/vi/Nextcloud/share</string>
+	<string>~/Nextcloud/share</string>
 </dict>
 </plist>

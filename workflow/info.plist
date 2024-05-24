@@ -6,6 +6,21 @@
 	<string>au.def.upload</string>
 	<key>connections</key>
 	<dict>
+		<key>0CCCBD58-19A7-43AE-B29F-23223A26039A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4E2D6183-4E1D-4BFF-9228-CE4B25DCF736</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>_button1</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>0D512524-37A5-4908-A842-73A88AF7C919</key>
 		<array/>
 		<key>1EC0359C-48ED-4D32-B2F3-F2E593224F01</key>
@@ -37,7 +52,33 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>AA137055-BEC3-4065-AF5E-2D6B79AEBBF4</string>
+				<string>DD0D9E7E-D3E6-4589-AABD-F25B95F85E7B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>39DF0D33-378C-484C-A931-11785625DD43</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9349DDE-D6CD-4C92-AB16-210E8166B39B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4E2D6183-4E1D-4BFF-9228-CE4B25DCF736</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>39DF0D33-378C-484C-A931-11785625DD43</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -122,11 +163,76 @@
 				<false/>
 			</dict>
 		</array>
-		<key>E986CBE7-F9DA-4C82-8917-5CDD32FC9C37</key>
+		<key>CFF09A71-1018-452C-800C-D4EC54DB016C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>39DF0D33-378C-484C-A931-11785625DD43</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>fileexists</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>0CCCBD58-19A7-43AE-B29F-23223A26039A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D9349DDE-D6CD-4C92-AB16-210E8166B39B</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>1EC0359C-48ED-4D32-B2F3-F2E593224F01</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>160F8409-3B88-4EEF-8359-391DD48F1391</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>AA137055-BEC3-4065-AF5E-2D6B79AEBBF4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>59395524-F3A4-4063-A93F-BFA33CF4C366</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DD0D9E7E-D3E6-4589-AABD-F25B95F85E7B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CFF09A71-1018-452C-800C-D4EC54DB016C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E986CBE7-F9DA-4C82-8917-5CDD32FC9C37</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DD0D9E7E-D3E6-4589-AABD-F25B95F85E7B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -251,27 +357,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>Result of {var:backend} upload</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>2AF36373-AFB0-4DF0-8CD7-58EBD960FF5B</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -307,17 +392,101 @@
 				<key>argument</key>
 				<string></string>
 				<key>passthroughargument</key>
-				<true/>
+				<false/>
 				<key>variables</key>
 				<dict>
 					<key>backend</key>
 					<string>nextcloud</string>
+					<key>file</key>
+					<string>{query}</string>
 				</dict>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>E986CBE7-F9DA-4C82-8917-5CDD32FC9C37</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Result of {var:backend} upload</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>2AF36373-AFB0-4DF0-8CD7-58EBD960FF5B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>fileutivariablename</key>
+				<string></string>
+				<key>outputfileuti</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.file</string>
+			<key>uid</key>
+			<string>CFF09A71-1018-452C-800C-D4EC54DB016C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:backend}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>nextcloud</string>
+						<key>outputlabel</key>
+						<string>nc</string>
+						<key>uid</key>
+						<string>160F8409-3B88-4EEF-8359-391DD48F1391</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:backend}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>immich</string>
+						<key>outputlabel</key>
+						<string>immich</string>
+						<key>uid</key>
+						<string>59395524-F3A4-4063-A93F-BFA33CF4C366</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>D9349DDE-D6CD-4C92-AB16-210E8166B39B</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -345,6 +514,40 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argument</key>
+				<string>{const:alfred_workflow_data}/has-run</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>DD0D9E7E-D3E6-4589-AABD-F25B95F85E7B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{var:file}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>39DF0D33-378C-484C-A931-11785625DD43</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>acceptsmulti</key>
 				<integer>0</integer>
 				<key>filetypes</key>
@@ -360,6 +563,52 @@
 			<string>90B8229C-1951-491E-86E3-6A3E854F8445</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>backend</key>
+					<string>immich</string>
+					<key>file</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>2C686EE8-7869-49B9-83B9-7BB339052083</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>touch "${alfred_workflow_data}/has-run"
+xattr -d com.apple.quarantine ./immich-go ./share-nc.sh ./nec</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>4E2D6183-4E1D-4BFF-9228-CE4B25DCF736</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -410,20 +659,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
+				<key>button1</key>
+				<string>Allow</string>
+				<key>button2</key>
+				<string>Cancel</string>
+				<key>button3</key>
 				<string></string>
-				<key>passthroughargument</key>
-				<true/>
-				<key>variables</key>
-				<dict>
-					<key>backend</key>
-					<string>immich</string>
-				</dict>
+				<key>description</key>
+				<string>This workflow relies on internal scripts and binaries that you must allow to run. Selecting allow will remove the xattr com.apple.quarantine from files shiped with the workflow.</string>
+				<key>title</key>
+				<string>Initalise workflow by alllowing binaries to run</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
+			<string>alfred.workflow.utility.dialog</string>
 			<key>uid</key>
-			<string>2C686EE8-7869-49B9-83B9-7BB339052083</string>
+			<string>0CCCBD58-19A7-43AE-B29F-23223A26039A</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -484,61 +734,82 @@ Displays results/status via notifications, filter keyword and even past results 
 Cloud icon (icon.png) created by graphicmall - Flaticon (https://www.flaticon.com/free-icons/cloud)</string>
 	<key>uidata</key>
 	<dict>
+		<key>0CCCBD58-19A7-43AE-B29F-23223A26039A</key>
+		<dict>
+			<key>xpos</key>
+			<real>450</real>
+			<key>ypos</key>
+			<real>455</real>
+		</dict>
 		<key>0D512524-37A5-4908-A842-73A88AF7C919</key>
 		<dict>
 			<key>xpos</key>
-			<real>135</real>
+			<real>55</real>
 			<key>ypos</key>
-			<real>65</real>
+			<real>40</real>
 		</dict>
 		<key>0E46661F-558F-4479-A3F8-26E735BA8DFB</key>
 		<dict>
 			<key>xpos</key>
-			<real>580</real>
+			<real>990</real>
 			<key>ypos</key>
-			<real>325</real>
+			<real>350</real>
 		</dict>
 		<key>1EC0359C-48ED-4D32-B2F3-F2E593224F01</key>
 		<dict>
 			<key>xpos</key>
-			<real>360</real>
+			<real>850</real>
 			<key>ypos</key>
-			<real>245</real>
+			<real>240</real>
 		</dict>
 		<key>2AF36373-AFB0-4DF0-8CD7-58EBD960FF5B</key>
 		<dict>
 			<key>xpos</key>
-			<real>905</real>
+			<real>1400</real>
 			<key>ypos</key>
-			<real>230</real>
+			<real>315</real>
 		</dict>
 		<key>2C686EE8-7869-49B9-83B9-7BB339052083</key>
 		<dict>
 			<key>xpos</key>
-			<real>245</real>
+			<real>220</real>
+			<key>ypos</key>
+			<real>425</real>
+		</dict>
+		<key>39DF0D33-378C-484C-A931-11785625DD43</key>
+		<dict>
+			<key>xpos</key>
+			<real>665</real>
+			<key>ypos</key>
+			<real>355</real>
+		</dict>
+		<key>4E2D6183-4E1D-4BFF-9228-CE4B25DCF736</key>
+		<dict>
+			<key>xpos</key>
+			<real>530</real>
 			<key>ypos</key>
 			<real>430</real>
 		</dict>
 		<key>76514825-C917-4FB9-8B0A-FA66AAAF0C54</key>
 		<dict>
 			<key>xpos</key>
-			<real>595</real>
+			<real>1140</real>
 			<key>ypos</key>
-			<real>150</real>
+			<real>220</real>
 		</dict>
 		<key>90B8229C-1951-491E-86E3-6A3E854F8445</key>
 		<dict>
 			<key>xpos</key>
-			<real>65</real>
+			<real>50</real>
 			<key>ypos</key>
-			<real>395</real>
+			<real>400</real>
 		</dict>
 		<key>AA137055-BEC3-4065-AF5E-2D6B79AEBBF4</key>
 		<dict>
 			<key>xpos</key>
-			<real>315</real>
+			<real>845</real>
 			<key>ypos</key>
-			<real>405</real>
+			<real>440</real>
 		</dict>
 		<key>B067A6DC-E67C-4FBB-AC5E-A1774A154167</key>
 		<dict>
@@ -547,19 +818,40 @@ Cloud icon (icon.png) created by graphicmall - Flaticon (https://www.flaticon.co
 			<key>ypos</key>
 			<real>230</real>
 		</dict>
+		<key>CFF09A71-1018-452C-800C-D4EC54DB016C</key>
+		<dict>
+			<key>xpos</key>
+			<real>385</real>
+			<key>ypos</key>
+			<real>340</real>
+		</dict>
+		<key>D9349DDE-D6CD-4C92-AB16-210E8166B39B</key>
+		<dict>
+			<key>xpos</key>
+			<real>750</real>
+			<key>ypos</key>
+			<real>345</real>
+		</dict>
+		<key>DD0D9E7E-D3E6-4589-AABD-F25B95F85E7B</key>
+		<dict>
+			<key>xpos</key>
+			<real>305</real>
+			<key>ypos</key>
+			<real>350</real>
+		</dict>
 		<key>E986CBE7-F9DA-4C82-8917-5CDD32FC9C37</key>
 		<dict>
 			<key>xpos</key>
-			<real>275</real>
+			<real>210</real>
 			<key>ypos</key>
-			<real>260</real>
+			<real>265</real>
 		</dict>
 		<key>F8190FCC-73F9-46F8-840D-CB228AEE4E10</key>
 		<dict>
 			<key>xpos</key>
-			<real>580</real>
+			<real>1130</real>
 			<key>ypos</key>
-			<real>505</real>
+			<real>465</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -628,8 +920,10 @@ Cloud icon (icon.png) created by graphicmall - Flaticon (https://www.flaticon.co
 			<string>immichurl</string>
 		</dict>
 	</array>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string>1.0</string>
+	<string>1.2</string>
 	<key>webaddress</key>
 	<string>def.au</string>
 </dict>
