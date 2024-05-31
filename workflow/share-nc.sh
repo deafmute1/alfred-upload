@@ -25,50 +25,50 @@ if [ -z "$srcPath" ]; then
     exit 1
 fi
 
-if [ -d "$srcPath" ]; then 
-    # always use indirect links for folder upload.
-    direct=false
-fi
+# disable direct for directories
+[ -d "$srcPath" ] && direct=false
 
-# add slug to dest filename if necessary to avoid collisions.
-cnt=1
-propfileName="$fileName"
-while [ -e "${ncRoot}/${propfileName}" ]; do 
-    propfileName="${fileName%%.*}-${cnt}.${fileName#*.}"
-    (( cnt+=1 ))
-done
-fileName="$propfileName"
+case "$srcPath" in 
+    "$ncRoot"*) 
+        [ "$stable" != true ] && echo "File in ${ncRoot} already; not copying" ;;
+    *)
+        # add slug to dest filename if necessary to avoid collisions.
+        cnt=1
+        propfileName="$fileName"
+        while [ -e "${ncRoot}/${propfileName}" ]; do 
+            propfileName="${fileName%%.*}-${cnt}.${fileName#*.}"
+            (( cnt+=1 ))
+        done
+        fileName="$propfileName"
 
-cp -r "$srcPath" "${ncRoot}/${fileName}"
+        cp -r "$srcPath" "${ncRoot}/${fileName}"
+        ;;
+esac
 
-# retry based on vars while waiting for nextcloud to sync
-out=$("$necPath" share --expire 'in 6 weeks' "${ncRoot}/${fileName}" 2>&1)
 cnt=0
-while [ "$out" == "$ERR_STRING" ] && [  $cnt -lt "$RETRY" ]; do
-    if [ "$stable" != true ]; then 
-        echo "File not synced to cloud; retrying"
-    fi
-    sleep "$RETRY_TIME"
+out=$("$necPath" ls | awk '/config.yaml/ {print $3}' | head -n 1)
+if [ -n "$out" ]; then
+    # retry based on vars while waiting for nextcloud to sync
     out=$("$necPath" share --expire 'in 6 weeks' "${ncRoot}/${fileName}" 2>&1)
-    (( cnt+=1 ))
-done 
+    while [ "$out" == "$ERR_STRING" ] && [  $cnt -lt "$RETRY" ]; do
+        [ "$stable" != true ] && echo "File not synced to cloud; retrying"
+        sleep "$RETRY_TIME"
+        out=$("$necPath" share --expire 'in 6 weeks' "${ncRoot}/${fileName}" 2>&1)
+        (( cnt+=1 ))
+    done 
+fi
 
 # Stable output format for last 2 lines of stdout:
 # <Status string describing success/failure with time> \n <Link URL if success>
-at=$(date +"%Y-%m-%d %H:%M")
 if [ "$out" == "$ERR_STRING" ]; then
-    printf "Failure to upload %s after %s retries at %s" "$srcPath" "$cnt" "$at"
-    printf "
-    "
+    printf "%s" "$cnt"
     exit 1
 else
     out=$(tail -n 1 <<< "$out")
     if [ "$direct" = true ]; then
         out="${out}/download/${fileName}"
     fi 
-    printf "Success uploading %s at %s" "$srcPath" "$at"
-    printf "
-    %s" "$out"
+    printf "%s\n0;%s" "$srcPath" "$out"
     pbcopy <<< "$out"
     exit 0
 fi
