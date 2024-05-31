@@ -333,7 +333,7 @@ def png_to_icns(png_path, icns_path):
             '--convert', 'icns',
             '--output', icns_path,
             iconset]
-        print(f'cmd {cmd}')
+
         retcode = subprocess.call(cmd)
         if retcode != 0:
             raise RuntimeError(f'iconset exited with {retcode}')

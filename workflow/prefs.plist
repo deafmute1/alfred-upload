@@ -8,5 +8,7 @@
 	<string>https://immich.def.au</string>
 	<key>ncdest</key>
 	<string>~/Nextcloud/share</string>
+	<key>ptpimgkey</key>
+	<string>6f4cc8e5-7faf-42cb-ae7a-bd4e25b2b4ab</string>
 </dict>
 </plist>
