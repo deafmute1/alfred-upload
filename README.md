@@ -20,6 +20,10 @@ Displays results/status via notifications, filter keyword and even past results 
 ### Additional tools
 - uploadres (keyword): displays status of last run upload for each backend
 
+### Changelog
+v1.2 (2024-05-24)
+- Added dialogue pop-up on first run to remove com.apple.quarantine from scripts/binaries
+
 ---
 
 Cloud icon (icon.png) created by graphicmall - Flaticon (https://www.flaticon.com/free-icons/cloud)
